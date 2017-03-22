@@ -1,0 +1,13 @@
+Welcome <%= @user.username %>
+
+Add a guest
+
+<%= form_for @guest do |f| %>
+	<%= f.label :name %>
+	<%= f.text_field :name %><br>
+	<%= f.label :occupation %>
+	<%= f.text_field :occupation %>
+	<%= f.label :episodes %>
+	<%= f.text_field :episodes %>
+	<%= f.submit %>
+<% end %>
